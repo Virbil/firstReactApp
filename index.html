@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+  </head>
+
+  <style>
+    /* Google font */
+    @import url('https://fonts.googleapis.com/css?family=Orbitron');
+      
+    #clock, #react-time  {
+      background-color: #121212;
+      font-family: 'Orbitron', sans-serif;
+      color: #66ff99;
+      font-size: 56px;
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  </style>
+
+  <body>
+
+    <h2>Add React in One Minute</h2>
+    <p>This page demonstrates using React with no build tooling.</p>
+    <p>React is loaded as a script tag.</p>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="like_button_container"></div>
+
+    <h1>The below is from Coding Dojo</h1>
+
+    <div id="btnDojo"></div>
+
+    <div id="clock"></div>
+    <div>White Spaces</div>
+    <div id="react-time"></div>
+
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="like_button.js"></script>
+
+    <script>
+      // console.log(React);
+      // console.log(ReactDOM);
+    </script>
+
+  </body>
+</html>
